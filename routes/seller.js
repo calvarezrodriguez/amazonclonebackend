@@ -9,8 +9,8 @@ const multer = require("multer");
 const multerS3 = require("multer-s3");
 // Permiso para acceder al bucket
 const s3 = new aws.S3({
-  accessKeyId: "AKIA5W2PLOZZBTN6TNMO",
-  secretAccessKey: "7t/7iADO8xpfJirGUdwDx6qnJikkQNm5UIUDxMtE",
+  accessKeyId: process.env.AMAZON_KEY,
+  secretAccessKey: process.env.AMAZON_SECRET,
 });
 
 const faker = require("faker");
